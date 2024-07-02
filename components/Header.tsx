@@ -47,7 +47,7 @@ const Header = () => {
             />
             <div 
             onClick={searchHandler}
-            className="bg-orange-500 p-2 rounded-r-md cursor-pointer">
+            className="bg-orange-500 p-2 rounded-r-md hover:bg-[#ffad43] cursor-pointer">
               <FaSearch size={"24px"} className="text-black" />
             </div>
           </div>
