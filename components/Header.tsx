@@ -1,5 +1,7 @@
 'use client';
 
+import { useAppSelector } from "@/lib/supabase/hooks/redux";
+import { getCart } from "@/redux/cartSlice";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
@@ -23,6 +25,9 @@ const itemList = [
 const Header = () => {
     const [query, setQuery] = useState<string>("");
     const router = useRouter();
+    const cart = useAppSelector(getCart);
+
+
     const searchHandler = () => {
         router.push(`/search/${query}`);
     }
@@ -60,19 +65,19 @@ const Header = () => {
               <p className="text-xs">Returns</p>
               <h1 className="font-medium text-sm">& Orders</h1>
             </div>
-            <div className="cursor-pointer">
-              <p className="relative top-1 left-2.5">0</p>
+            <Link href={"/cart"} className="cursor-pointer">
+              <p className="relative top-1 left-2.5">{cart.length}</p>
               <div className="flex">
                 <div>
                   <FaCartArrowDown size={"30px"} />
                 </div>
                 <h1 className="mt-2">Cart</h1>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
-      <div className="bg-[#232F3E] w-full text-white p-2 flex items-center justify-between">
+      <div className=" w-full border-b-2 border-orange-500 p-2 flex items-center justify-between">
         <div>
           {
             itemList.map((link, idx) => {
@@ -80,7 +85,7 @@ const Header = () => {
                 <Link
                     href={`/${link}`}
                     key={idx}
-                    className="mx-2 hover:border border border-transparent hover:border-white p-2"
+                    className="mx-2 hover:border border border-transparent hover:border-white hover:font-bold hover:bg-orange-500 hover:rounded-md p-2"
                 >
                     {link}
                 </Link>

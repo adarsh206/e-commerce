@@ -1,6 +1,11 @@
+import { useAppDispatch } from '@/lib/supabase/hooks/redux'
+import { addToCart } from '@/redux/cartSlice'
+import { useRouter } from 'next/navigation';
 import React from 'react'
 
-const AddToCardContainer = () => {
+const AddToCardContainer = ({product}:{product:any}) => {
+  const dispatch = useAppDispatch();
+  const router = useRouter();
   return (
     <div className='border border-gray-300 rounded-md h-fit'>
         <div className='p-4'>
@@ -8,7 +13,10 @@ const AddToCardContainer = () => {
             <h1 className='mt-4'>Or fastest delivery Tomorrow, 03 July. Order within 15 hrs 53 min. Details</h1>
             <p className='mt-4'>Join Our Membership for exciting offers</p>
             <p className='mt-4'>Deliver to <span className='text-[#e934f3] '>Adarsh - Narkatiaganj </span>845455</p>
-            <button className='bg-pink-500 w-full rounded-full py-2 mt-2'>Add to cart</button>
+            <button onClick={() => {
+              dispatch(addToCart(product));
+              router.push("/cart");
+            }} className='bg-pink-500 w-full rounded-full py-2 mt-2'>Add to cart</button>
             <button className='bg-orange-400 w-full rounded-full py-2 mt-2'>Buy now</button>
         </div>
     </div>

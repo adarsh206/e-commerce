@@ -5,6 +5,9 @@ import { supabase } from "../products";
     const [products, setProducts] = useState<any>([]);
     const [filterData, setFilterData] = useState<any>([]);
     const [singleProduct, setSingleProduct] = useState<any>([]);
+    const [mensProduct, setMensProduct] = useState<any>([]);
+    const [womensProduct, setWomensProduct] = useState<any>([]);
+
 
     // Add products from fakestoreapi.com website to supabase
     const getDataFromSupabase = async () => {
@@ -12,7 +15,7 @@ import { supabase } from "../products";
 
     if(data){
         setProducts(data);
-        console.log(data);
+        
     }
     if(error){
         console.log(error);
@@ -42,6 +45,28 @@ import { supabase } from "../products";
         }
     }
 
+    const getMensClothing = async () => {
+        let {data, error} = await supabase.from('allproducts').select('*').ilike('category', `men's clothing`);
+        if(data){
+            setMensProduct(data);
+        }
+        if(error){
+            console.log(error);
+            
+        }
+    }
+
+    const getWomensClothing = async () => {
+        let {data, error} = await supabase.from('allproducts').select('*').ilike('category', `women's clothing`);
+        if(data){
+            setWomensProduct(data);
+        }
+        if(error){
+            console.log(error);
+            
+        }
+    }
+
 
     return { 
         products, 
@@ -49,7 +74,11 @@ import { supabase } from "../products";
         filterData,
         getFilteredData,
         singleProduct,
-        getSingleProduct
+        getSingleProduct,
+        mensProduct,
+        getMensClothing,
+        womensProduct,
+        getWomensClothing
         
 
     };
