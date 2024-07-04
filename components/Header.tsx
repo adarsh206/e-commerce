@@ -57,8 +57,11 @@ const Header = () => {
             </div>
           </div>
           <div className="flex items-center justify-around w-[20%]">
-            <div className="cursor-pointer">
-              <h1 className="text-xs">Hello, Adarsh</h1>
+            <div onClick={()=>{
+                            router.push("/signin")
+                        }} 
+            className="cursor-pointer">
+              <h1 className="text-xs hover:underline">Sign In</h1>
               <h1 className="font-medium text-sm">Accounts & Lists</h1>
             </div>
             <div>
@@ -94,7 +97,7 @@ const Header = () => {
           }
         </div>
         <div className="mr-5">
-          <h1 className="text-[#FEBD69] font-bold cursor-pointer hover:underline">
+          <h1 className="text-[#f6a132] font-bold cursor-pointer hover:underline">
             Sign Out
           </h1>
         </div>
