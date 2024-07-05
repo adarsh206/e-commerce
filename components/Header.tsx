@@ -1,10 +1,11 @@
 'use client';
 
 import { useAppSelector } from "@/lib/supabase/hooks/redux";
+import { supabase } from "@/lib/supabase/products";
 import { getCart } from "@/redux/cartSlice";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { FaCartArrowDown } from "react-icons/fa6";
 
@@ -24,6 +25,7 @@ const itemList = [
 
 const Header = () => {
     const [query, setQuery] = useState<string>("");
+    const [user, setUser] = useState<any>(null);
     const router = useRouter();
     const cart = useAppSelector(getCart);
 
@@ -31,6 +33,16 @@ const Header = () => {
     const searchHandler = () => {
         router.push(`/search/${query}`);
     }
+
+    useEffect(() => {
+      const getUserData = async () => {
+        const {data:{user}} = await supabase.auth.getUser();
+        setUser(user);
+      }
+      getUserData();
+     
+    },[]);
+
 
   return (
     <>
@@ -61,7 +73,7 @@ const Header = () => {
                             router.push("/signin")
                         }} 
             className="cursor-pointer">
-              <h1 className="text-xs hover:underline">Sign In</h1>
+              <h1 className="text-xs hover:underline">{`${user ? user.identities[0].identity_data.full_name:"Signin"}`}</h1>
               <h1 className="font-medium text-sm">Accounts & Lists</h1>
             </div>
             <div>
@@ -97,7 +109,12 @@ const Header = () => {
           }
         </div>
         <div className="mr-5">
-          <h1 className="text-[#f6a132] font-bold cursor-pointer hover:underline">
+          <h1 
+          onClick={async () => {
+            const { error } = await supabase.auth.signOut();
+            router.push('/signin');
+          }}
+          className="text-[#f6a132] font-bold cursor-pointer hover:underline">
             Sign Out
           </h1>
         </div>
