@@ -24,7 +24,7 @@ const OrderSummary = () => {
                 </div>
                 <div className='flex text-2xl font-bold text-red-600 py-3 border-t border-b border-gray-300 my-1'>
                     <h1>Order Total:</h1>
-                    <p>$1456</p>
+                    <p>$1500</p>
                 </div>
             </div>
             <button className='bg-orange-500 w-full rounded-full px-4 py-2 my-3'>Place Your Order Now</button>
