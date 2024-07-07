@@ -12,7 +12,7 @@ const ProceedToBuy = ({ length, totalPrice }: { length: number, totalPrice: numb
                 <Subtotal left={true} length={length} totalPrice={totalPrice}/>
                 <button onClick={() => {
                     router.push("/checkout")
-                }} className='bg-orange-500 w-full py-2 rounded-full shadow-md my-3'>Proceed to Buy</button>
+                }} className='bg-orange-600 w-full py-2 rounded-full shadow-md my-3'>Proceed to Buy</button>
             </div>
         </div>
     )
