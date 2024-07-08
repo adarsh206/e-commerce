@@ -4,9 +4,17 @@ import React from 'react'
 import DeliveryAddress from './DeliveryAddress'
 import OrderSummary from './OrderSummary'
 import { FaLock } from 'react-icons/fa6'
+import { useAppSelector } from '@/lib/supabase/hooks/redux';
+import { getCart } from '@/redux/cartSlice';
 
 
 export const Checkout = () => {
+  
+  const cart = useAppSelector(getCart);
+    let totalPrice = 0;
+    cart.forEach((item:any)=>{
+        totalPrice += item.price * item.quantity
+    });
  
 
   return (
@@ -21,7 +29,7 @@ export const Checkout = () => {
         </div>
         <div className='flex justify-between w-[70%] mx-auto'>
             <DeliveryAddress />
-            <OrderSummary />
+            <OrderSummary totalPrice={totalPrice}/>
         </div>
         
     </div>
