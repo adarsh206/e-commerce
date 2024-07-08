@@ -17,6 +17,10 @@ const CategoryWiseProduct = ({product}:{product:any}) => {
         <div>
           <h1>{product.title}</h1>
           <Ratings ratings={product.rating}/>
+          <div className='font-bold py-1'>
+          <p className='text-black'>Price: ${product.price}</p>
+          </div>
+          
         </div>
         <div className='my-2'>
                 <button
