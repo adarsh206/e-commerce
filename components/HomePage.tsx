@@ -6,6 +6,7 @@ import { useSupabase } from '@/lib/supabase/hooks/useSupabase'
 import Image from 'next/image'
 import React, { useEffect } from 'react'
 import CategoryWiseProduct from './shared/CategoryWiseProduct';
+import Below from './Below';
 
 const HomePage = () => {
   const {  mensProduct, getMensClothing, womensProduct, getWomensClothing } = useSupabase();
@@ -18,7 +19,8 @@ const HomePage = () => {
 
 
   return (
-    <div>
+    <>
+     <div>
         <Image src={"https://images-eu.ssl-images-amazon.com/images/G/31/INSLGW/pc_unrec_refresh._CB555261616_.jpg"}
         width={10000}
         height={1000}
@@ -47,7 +49,12 @@ const HomePage = () => {
           })
         }
       </div>
+   
+      
     </div>
+    </>
+   
+      
   )
 }
 
