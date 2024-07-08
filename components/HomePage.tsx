@@ -7,13 +7,18 @@ import Image from 'next/image'
 import React, { useEffect } from 'react'
 import CategoryWiseProduct from './shared/CategoryWiseProduct';
 import Below from './Below';
+import { useParams, useRouter } from 'next/navigation';
+import SingleProduct from './SingleProduct';
 
 const HomePage = () => {
-  const {  mensProduct, getMensClothing, womensProduct, getWomensClothing } = useSupabase();
+  const {  mensProduct, getMensClothing, womensProduct, getWomensClothing, getSingleProduct, singleProduct } = useSupabase();
+  const  router  = useRouter();
+  const { id }  = useParams();
 
   useEffect(() => {
     getMensClothing();
     getWomensClothing();
+    getSingleProduct(Number(id));
   },[]);
 
 
@@ -33,7 +38,9 @@ const HomePage = () => {
         {
           mensProduct.map((product: any) => {
             return (
-              <div key={product.id}>
+              <div key={product.id} onClick={() => {
+                router.push(`/product/${product.id}`)
+              }}>
                 <CategoryWiseProduct product={product}/>
               </div>
             )
