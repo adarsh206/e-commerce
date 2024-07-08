@@ -1,14 +1,13 @@
 # Images:
 
-![screencapture-localhost-3000-signin-2024-07-08-14_00_57](https://github.com/adarsh206/e-commerce/assets/76390366/f5a884fc-bf28-4da3-86b8-a73b94c5f913)
-![screencapture-localhost-3000-success-2024-07-08-14_00_36](https://github.com/adarsh206/e-commerce/assets/76390366/412dcf3f-6abf-4a49-a48a-1816b6c5198e)
-![screencapture-checkout-stripe-c-pay-cs-test-b1l6NuSFpWWgZmugqaPYJusmqZInH4W42S9rCIMs0ADntohYgo0MbsZHgF-2024-07-08-14_00_04](https://github.com/adarsh206/e-commerce/assets/76390366/d0e049ab-0d5d-425c-ad5b-266f5c96a7d5)
-![screencapture-localhost-3000-checkout-2024-07-08-13_59_18](https://github.com/adarsh206/e-commerce/assets/76390366/43292792-4266-4d31-a914-4a8923c5e1d1)
-![screencapture-localhost-3000-cart-2024-07-08-13_58_14](https://github.com/adarsh206/e-commerce/assets/76390366/30366f0d-686b-4713-b3bb-60f531828257)
-![screencapture-localhost-3000-product-2-2024-07-08-13_58_00](https://github.com/adarsh206/e-commerce/assets/76390366/784b3d68-c64b-4e79-826a-80e05ce250d6)
-![screencapture-localhost-3000-search-cloth-2024-07-08-13_57_48](https://github.com/adarsh206/e-commerce/assets/76390366/f6e3c2d5-4603-4583-9156-4ea8ee380138)
 ![screencapture-localhost-3000-2024-07-08-13_49_32](https://github.com/adarsh206/e-commerce/assets/76390366/c2b3e7e9-15cc-485f-bc91-ce295d2230bd)
-
+![screencapture-localhost-3000-search-cloth-2024-07-08-13_57_48](https://github.com/adarsh206/e-commerce/assets/76390366/f6e3c2d5-4603-4583-9156-4ea8ee380138)
+![screencapture-localhost-3000-product-2-2024-07-08-13_58_00](https://github.com/adarsh206/e-commerce/assets/76390366/784b3d68-c64b-4e79-826a-80e05ce250d6)
+![screencapture-localhost-3000-cart-2024-07-08-13_58_14](https://github.com/adarsh206/e-commerce/assets/76390366/30366f0d-686b-4713-b3bb-60f531828257)
+![screencapture-localhost-3000-checkout-2024-07-08-13_59_18](https://github.com/adarsh206/e-commerce/assets/76390366/43292792-4266-4d31-a914-4a8923c5e1d1)
+![screencapture-checkout-stripe-c-pay-cs-test-b1l6NuSFpWWgZmugqaPYJusmqZInH4W42S9rCIMs0ADntohYgo0MbsZHgF-2024-07-08-14_00_04](https://github.com/adarsh206/e-commerce/assets/76390366/d0e049ab-0d5d-425c-ad5b-266f5c96a7d5)
+![screencapture-localhost-3000-success-2024-07-08-14_00_36](https://github.com/adarsh206/e-commerce/assets/76390366/412dcf3f-6abf-4a49-a48a-1816b6c5198e)
+![screencapture-localhost-3000-signin-2024-07-08-14_00_57](https://github.com/adarsh206/e-commerce/assets/76390366/f5a884fc-bf28-4da3-86b8-a73b94c5f913)
 
 
 
