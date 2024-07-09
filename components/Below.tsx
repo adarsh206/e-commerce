@@ -8,41 +8,41 @@ export default function Below() {
   return (
     <Footer bgDark>
       <div className="w-full">
-        <div className="grid w-full grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
+        <div className="grid w-full bg-slate-800 text-white grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
           <div>
-            <FooterTitle title="Company" className="text-xl"/>
-            <FooterLinkGroup col className="flex flex-col py-5">
-              <FooterLink href="#">About</FooterLink>
-              <FooterLink href="#">Careers</FooterLink>
-              <FooterLink href="#">Brand Center</FooterLink>
-              <FooterLink href="#">Blog</FooterLink>
-            </FooterLinkGroup>
+            <Footer.Title title="Company" className="text-xl"/>
+            <Footer.LinkGroup col className="flex flex-col py-5">
+              <Footer.Link href="#">About</Footer.Link>
+              <Footer.Link href="#">Careers</Footer.Link>
+              <Footer.Link href="#">Brand Center</Footer.Link>
+              <Footer.Link href="#">Blog</Footer.Link>
+            </Footer.LinkGroup>
           </div>
           <div>
-            <FooterTitle title="Help center" className="text-xl"/>
-            <FooterLinkGroup col className="flex flex-col py-5">
-              <FooterLink href="#">Discord Server</FooterLink>
-              <FooterLink href="#">Twitter</FooterLink>
-              <FooterLink href="#">Facebook</FooterLink>
-              <FooterLink href="#">Contact Us</FooterLink>
-            </FooterLinkGroup>
+            <Footer.Title title="Help center" className="text-xl"/>
+            <Footer.LinkGroup col className="flex flex-col py-5">
+              <Footer.Link href="#">Discord Server</Footer.Link>
+              <Footer.Link href="#">Twitter</Footer.Link>
+              <Footer.Link href="#">Facebook</Footer.Link>
+              <Footer.Link href="#">Contact Us</Footer.Link>
+            </Footer.LinkGroup>
           </div>
           <div>
-            <FooterTitle title="Legal" className="text-xl"/>
-            <FooterLinkGroup col className="flex flex-col py-5">
-              <FooterLink href="#">Privacy Policy</FooterLink>
-              <FooterLink href="#">Licensing</FooterLink>
-              <FooterLink href="#">Terms &amp; Conditions</FooterLink>
-            </FooterLinkGroup>
+            <Footer.Title title="Legal" className="text-xl"/>
+            <Footer.LinkGroup col className="flex flex-col py-5">
+              <Footer.Link href="#">Privacy Policy</Footer.Link>
+              <Footer.Link href="#">Licensing</Footer.Link>
+              <Footer.Link href="#">Terms &amp; Conditions</Footer.Link>
+            </Footer.LinkGroup>
           </div>
           <div>
-            <FooterTitle title="Download" className="text-xl"/>
-            <FooterLinkGroup col className="flex flex-col py-5">
-              <FooterLink href="#">iOS</FooterLink>
-              <FooterLink href="#">Android</FooterLink>
-              <FooterLink href="#">Windows</FooterLink>
-              <FooterLink href="#">MacOS</FooterLink>
-            </FooterLinkGroup>
+            <Footer.Title title="Download" className="text-xl"/>
+            <Footer.LinkGroup col className="flex flex-col py-5">
+              <Footer.Link href="#">iOS</Footer.Link>
+              <Footer.Link href="#">Android</Footer.Link>
+              <Footer.Link href="#">Windows</Footer.Link>
+              <Footer.Link href="#">MacOS</Footer.Link>
+            </Footer.LinkGroup>
           </div>
         </div>
         <div className="w-full bg-gray-700 px-4 py-6 sm:flex sm:items-center sm:justify-between">
