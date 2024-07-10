@@ -12,7 +12,13 @@
 
 
 
+# How to use this project:
 
+1. first download this repository into your local system.
+2. then open in any code editor like vs code.
+3. then install all the dependencies mention in package.json file.
+4. and then give your api key and password for stripe payment gateway and supabase.
+5. then run project on any browser like chrome it will start running.
 
 
 
