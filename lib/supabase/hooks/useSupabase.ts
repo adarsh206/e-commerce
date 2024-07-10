@@ -9,7 +9,7 @@ import { supabase } from "../products";
     const [womensProduct, setWomensProduct] = useState<any>([]);
 
 
-    // Add products from fakestoreapi.com website to supabase
+    // Add products from fakestoreapi.com website to supabase of any kind of product
     const getDataFromSupabase = async () => {
     let { data, error } = await supabase.from('allproducts').select('*');
 
