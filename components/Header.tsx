@@ -48,13 +48,16 @@ const Header = () => {
     <>
       <div className="bg-[#3a4351] text-white py-1">
         <div className="flex items-center justify-between w-[90%] mx-auto">
-          <Link
-            href={"/"}
-            className="w-[10%] text-orange-500 font-bold md:xl lg:text-2xl sm:text-xs "
-          >
-            ECOMMERCE
-          </Link>
-          <div className="w-[60%] flex items-center">
+          <div className="hover:scale-125">
+            <Link
+              href={"/"}
+              className="w-[10%] overflow-hidden font-bold md:xl lg:text-2xl sm:text-xs bg-gradient-to-r from-orange-600 via-amber-500 to-pink-600 text-transparent bg-clip-text"
+            >
+              ECOMMERCE
+            </Link>
+          </div>
+          
+          <div className="w-[50%] flex items-center">
             <input
               className="w-full p-2 rounded-l-md text-black outline-none"
               type="text"
