@@ -51,7 +51,7 @@ const Header = () => {
           <div className="hover:scale-125">
             <Link
               href={"/"}
-              className="w-[10%] overflow-hidden font-bold md:xl lg:text-2xl sm:text-xs bg-gradient-to-r from-orange-600 via-amber-500 to-pink-600 text-transparent bg-clip-text"
+              className="w-[10%] overflow-hidden font-bold md:xl lg:text-2xl sm:text-xs bg-gradient-to-r from-orange-600 via-amber-400 to-pink-500 text-transparent bg-clip-text"
             >
               ECOMMERCE
             </Link>
