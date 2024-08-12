@@ -76,7 +76,7 @@ const Header = () => {
                             router.push("/signin")
                         }} 
             className="cursor-pointer">
-              <h1 className="text-xs hover:underline">{`${user ? user.identities[0].identity_data.full_name:"Signin"}`}</h1>
+              <h1 className="text-xs hover:underline hover:text-orange-600 hover:scale-110">{`${user ? user.identities[0].identity_data.full_name:"Signin"}`}</h1>
               <h1 className="font-medium text-sm">Accounts & Lists</h1>
             </div>
             <div>
