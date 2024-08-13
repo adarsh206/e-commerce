@@ -1,3 +1,7 @@
+# E-Commerce Website:
+
+Build an full stack e-commerce website with Next.js 14, Tailwind Css, Redux, TypeScript, Supabase along with Stripe Payment Gateway.
+
 # Images:
 
 ![screencapture-localhost-3000-2024-07-08-13_49_32](https://github.com/adarsh206/e-commerce/assets/76390366/c2b3e7e9-15cc-485f-bc91-ce295d2230bd)
