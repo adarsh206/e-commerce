@@ -84,7 +84,7 @@ const Header = () => {
               <h1 className="font-medium text-sm">& Orders</h1>
             </div>
             <Link href={"/cart"} className="cursor-pointer">
-              <p className="relative top-1 left-2.5">{cart.length}</p>
+              <p className="relative top-1 left-2.5 text-red-500 font-bold">{cart.length}</p>
               <div className="flex">
                 <div>
                   <FaCartArrowDown size={"30px"} />
