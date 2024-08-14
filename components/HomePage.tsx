@@ -49,7 +49,9 @@ const HomePage = () => {
         {
           womensProduct.map((product: any) => {
             return (
-              <div key={product.id}>
+              <div key={product.id} onClick={() => {
+                router.push(`/product/${product.id}`)
+              }}>
                 <CategoryWiseProduct product={product} />
               </div>
             )
